@@ -1,0 +1,1 @@
+add_executable(Cmake_executable first.cpp second.cpp)
