@@ -1,8 +1,8 @@
-
-
 #!/bin/bash
 
-read -p "Please give name" fileOrDir
+#read -p "Please give name" fileOrDir
+
+fileOrDir="$1"
 
 if [ -f $fileOrDir ]; then
 	echo "is File"
@@ -11,4 +11,3 @@ elif test -d $fileOrDir; then
 else
 	echo "neither"
 fi
-

@@ -3,7 +3,11 @@
 
 number="$1"
 
-while [ $number != 0 ]; do
+if [ $number == 0 ]; then
+	echo -n 0
+fi
+
+while [ $number -gt 0 ]; do
 	dividend=$(($number%10))
 	let number=$number/10
 	# let number/=10
