@@ -1,12 +1,33 @@
 # Lab_1_week
 
-3_1 - taking this folder and loop through all it's folders and files, after what print them
+Scripts:
+[
+	Bash_3_1_Print_All_Files.sh - Prints all file names on given folder with subfolders
 
-3_2 - taking file or directory and using if, elif, else we define it as a file or folder 
-("test -d $fileOrDir" the same if we wrote "[ -f $fileOrDir ]")
+	Bash_3_2_regular_file_or_dir.sh - Checks if file is a regular file or directory 
+	("test -d $fileOrDir" the same if we wrote "[ -f $fileOrDir ]")
 
-3_3 - using while cycle we print the remainder of our number until it becomes zero
-("let number=$number/10" the same if we wrote "number=$(($number/10))")
+	Bash_3_3_print_reversed_number.sh - Prints given number inn reverse order
+	("let number=$number/10" the same if we wrote "number=$(($number/10))")
 
-3_4 - "wc -l" prints number of lines and files name, but using "<" we will print only number of lines
- 
+	Bash_3_4_count_lines_in_file.sh - Prints the number of lines in the file
+]
+
+
+
+Tests:
+[	
+	BashTest_3_2_regular_file_or_dir.sh - tests if script Bash_3_1_Print_All_Files.sh works right
+
+	BashTest_3_3_print_reversed_number.sh - tests if script Bash_3_3_print_reversed_number.sh works right
+
+	BashTest_3_4_count_lines_in_file.sh - tests if script Bash_3_4_count_lines_in_file.sh works right
+] 
+
+
+Cmake_Project_Build:
+[
+	first.cpp - contains main() function and creates a variable of type A in it, after what it calls memeber function print()
+	second.cpp - the structure A is written in it. Structute A has only one member function print() which prints "Hello World!!!"
+	CMakeLists.txt - links first.cpp and second.cpp together	
+]
