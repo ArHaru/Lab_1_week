@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/Cmake_executable.dir/first.cpp.o CMakeFiles/Cmake_executable.dir/second.cpp.o  -o Cmake_executable 

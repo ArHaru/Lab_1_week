@@ -1,3 +1,0 @@
-/home/funkvayub/Documents/Lab_1_Week/Cmake_3_5/build/CMakeFiles/rebuild_cache.dir
-/home/funkvayub/Documents/Lab_1_Week/Cmake_3_5/build/CMakeFiles/edit_cache.dir
-/home/funkvayub/Documents/Lab_1_Week/Cmake_3_5/build/CMakeFiles/Cmake_executable.dir
