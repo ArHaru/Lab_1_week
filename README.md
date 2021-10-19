@@ -2,26 +2,24 @@
 
 Scripts:
 [
-	Bash_3_1_Print_All_Files.sh - Prints all file names on given folder with subfolders
+	Print_All_Files.sh - Prints all file names on given folder with subfolders
 
-	Bash_3_2_regular_file_or_dir.sh - Checks if file is a regular file or directory 
-	("test -d $fileOrDir" the same if we wrote "[ -f $fileOrDir ]")
+	Regular_file_or_dir.sh - Checks if file is a regular file or directory 
 
-	Bash_3_3_print_reversed_number.sh - Prints given number inn reverse order
-	("let number=$number/10" the same if we wrote "number=$(($number/10))")
+	Print_reversed_number.sh - Prints given number inn reverse order
 
-	Bash_3_4_count_lines_in_file.sh - Prints the number of lines in the file
+	Count_lines_in_file.sh - Prints the number of lines in the file
 ]
 
 
 
 Tests:
 [	
-	BashTest_3_2_regular_file_or_dir.sh - tests if script Bash_3_1_Print_All_Files.sh works right
+	Regular_file_or_dir.sh - tests if script Bash_3_1_Print_All_Files.sh works right
 
-	BashTest_3_3_print_reversed_number.sh - tests if script Bash_3_3_print_reversed_number.sh works right
+	Print_reversed_number.sh - tests if script Bash_3_3_print_reversed_number.sh works right
 
-	BashTest_3_4_count_lines_in_file.sh - tests if script Bash_3_4_count_lines_in_file.sh works right
+	Count_lines_in_file.sh - tests if script Bash_3_4_count_lines_in_file.sh works right
 ] 
 
 
