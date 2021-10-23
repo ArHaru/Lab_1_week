@@ -1,11 +1,11 @@
 #!/bin/bash
 
-fileOrDir="$1"
-
-if [ -z $fileOrDir ]; then
-	echo "No argument was passed"
-	exit 1
+if ! [ $# == 1 ]; then
+        echo "Wrong number of arguments"
+        exit 1
 fi
+
+fileOrDir="$1"
 
 if [ -f $fileOrDir ]; then
 	echo "$fileOrDir is a file"

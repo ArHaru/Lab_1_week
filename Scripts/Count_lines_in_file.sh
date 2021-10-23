@@ -1,15 +1,15 @@
 #!/bin/bash
 
-givenFile="$1"
-
-if [ -z $givenFile ]; then
-	echo "No argument was passed"
-	exit 1
+if ! [ $# == 1 ]; then
+        echo "Wrong number of arguments"
+        exit 1
 fi
+
+givenFile="$1"
 
 if ! [ -f $givenFile ]; then
 	echo "$givenFile is not a file"
 	exit 1
 fi
 
-wc -l < $givenFile # < is needed so that the file name is not printed in the terminal
+wc -l < $givenFile

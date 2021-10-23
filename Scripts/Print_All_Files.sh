@@ -1,11 +1,11 @@
 #!/bin/bash
 
-givenFolder="$1"
-
-if [ -z "$givenFolder" ]; then
-	echo "No argument was passed"
-	exit 1
+if ! [ $# == 1 ]; then
+        echo "Wrong number of arguments"
+        exit 1
 fi
+
+givenFile="$1"
 
 if ! [ -d $givenFolder ]; then
 	echo "$givenFolder is not a directory"
