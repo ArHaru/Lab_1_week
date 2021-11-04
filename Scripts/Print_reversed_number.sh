@@ -1,13 +1,13 @@
 #!/bin/bash
 
-if ! [ $# == 1 ]; then
+if [ $# != 1 ]; then
         echo "Wrong number of arguments"
         exit 1
 fi
 
 number="$1"
 
-if ! [[ "$number" =~ ^-?[0-9]+$  ]]; then
+if [[ ! "$number" =~ ^-?[0-9]+$  ]]; then
 	echo "$number is not a number"
 	exit 1
 fi
