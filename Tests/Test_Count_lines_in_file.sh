@@ -10,52 +10,39 @@ function getExitCode
         echo $(echo $?)
 }
 
+function check
+{
+	if [ $1 == $2 ]; then
+		echo $3
+	else
+		echo $4
+		exit 2
+	fi
+}
+
 cd ../Scripts
 
 ./Count_lines_in_file.sh Count_lines_in_file.sh > test4Check.txt
 answer=$(getInfoFromFile)
 
-if [ "$answer" == "15" ]; then
-	echo "+ Count_lines_in_file.sh has 15 lines"
-else
-	echo -n "- Count_lines_in_file.sh has 15 lines, not "
-	echo $answer
-	exit 2
-fi
+check "$answer" "15" "+ Count_lines_in_file.sh has 15 lines" "- TEST FAILED: Count_lines_in_file.sh has 15 lines, not $answer"
 
 touch testFile.txt
 
 ./Count_lines_in_file.sh testFile.txt > test4Check.txt
 answer=$(getInfoFromFile)
 
-if [ "$answer" == "0" ]; then
-	echo "+ testFile.txt has 0 lines"
-else
-	echo -n "- testFile.txt has 0 lines, not "
-	echo $answer
-	exit 2
-fi
+check "$answer" "0" "+ testFile.txt has 0 lines" "- TEST FAILED: testFile.txt has 0 lines, not $answer"
 
 ./Count_lines_in_file.sh > test4Check.txt
 checker=$(getExitCode)
 
-if [ $checker == 1 ]; then
-	echo "+ Script works in the absence of arguments"
-else
-	echo "- Script doesn't work if there are no arguments"
-	exit 2
-fi
+check "$checker" "1" "+ Your script sends error when there is no arguments" "- TEST FAILED: when there is no arguments passed"
 
 ./Count_lines_in_file.sh Count_lines_in_file.sh testFile.txt > test4Check.txt
 checker=$(getExitCode)
 
-if [ $checker == 1 ]; then
-        echo "+ Script works with the wrong number of arguments"
-else
-        echo "- Script doesn't work with the wrong number of arguments"
-        exit 2
-fi
-
+check "$checker" "1" "+ Your script sends error when there is 2 arguments" "- TEST FAILED: when there is 2 arguments passed"
 
 rm testFile.txt
 rm test4Check.txt
