@@ -1,31 +1,32 @@
-# Lab_1_week
+# This code reads a graph and then when it gets 2 vertices, it prints all shortest paths from first vertex to another one
 
-Scripts:
-[
-	Print_All_Files.sh - Prints all file names on given folder with subfolders
+How to use this project:
+1) **First you need to write the number of your vertices and then the number of edges.**
+Here we create a graph with 5 vertices and 3 edges.
+>5 3
+2) **After we need to create an edge, to create one you need to write first vertex number and then second vertex number. The third parameter is weigth between that two vertices.**
+* Warning: pay atnention that vertices are numbered starting from 0
+Here we created an edge between 0 5 vertices with weigth 7
+>0 5 7
+3) **Now you probably want to see a list of all the short paths between vertex A and vertex B. For that you only need to write the number of that vertices.**
+Here we will get all short paths from vertex 3 to  vertex 9
+>3 9
 
-	Regular_file_or_dir.sh - Checks if file is a regular file or directory 
+## Here is a small example of one graph where we want to get all the short paths from vertex 0 to vertex 6
 
-	Print_reversed_number.sh - Prints given number inn reverse order
+```
+7 10
 
-	Count_lines_in_file.sh - Prints the number of lines in the file
-]
+0 1 3
+0 5 1000
+1 4 4
+1 5 5
+4 5 9
+4 3 3
+5 6 4
+3 2 1
+3 6 2
+2 6 1
 
-
-
-Tests:
-[	
-	Regular_file_or_dir.sh - tests if script Bash_3_1_Print_All_Files.sh works right
-
-	Print_reversed_number.sh - tests if script Bash_3_3_print_reversed_number.sh works right
-
-	Count_lines_in_file.sh - tests if script Bash_3_4_count_lines_in_file.sh works right
-] 
-
-
-Cmake_Project_Build:
-[
-	first.cpp - contains main() function and creates a variable of type A in it, after what it calls memeber function print()
-	second.cpp - the structure A is written in it. Structute A has only one member function print() which prints "Hello World!!!"
-	CMakeLists.txt - links first.cpp and second.cpp together	
-]
+0 6
+```
