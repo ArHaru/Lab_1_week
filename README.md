@@ -30,3 +30,4 @@
 
 0 6
 ```
+![GRAPH](https://user-images.githubusercontent.com/91688611/141691722-06aa8488-51bc-4bae-b399-85ff7108ced9.PNG)
