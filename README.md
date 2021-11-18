@@ -1,15 +1,15 @@
 # This code reads a graph and then when it gets 2 vertices, it prints all shortest paths from first vertex to another one
 
-How to use this project:
+## How to use this project:
 1) **First you need to write the number of your vertices and then the number of edges.**
-Here we create a graph with 5 vertices and 3 edges.
+* Here we create a graph with 5 vertices and 3 edges.
 >5 3
 2) **After we need to create an edge, to create one you need to write first vertex number and then second vertex number. The third parameter is weigth between that two vertices.**
-* Warning: pay atnention that vertices are numbered starting from 0
-Here we created an edge between 0 5 vertices with weigth 7
+* Warning: pay atnention that vertices are numbered starting from 0.
+* Here we created an edge between 0 5 vertices with weigth 7.
 >0 5 7
 3) **Now you probably want to see a list of all the short paths between vertex A and vertex B. For that you only need to write the number of that vertices.**
-Here we will get all short paths from vertex 3 to  vertex 9
+* Here we will get all short paths from vertex 3 to  vertex 9.
 >3 9
 
 ## Here is a small example of one graph where we want to get all the short paths from vertex 0 to vertex 6
@@ -30,3 +30,4 @@ Here we will get all short paths from vertex 3 to  vertex 9
 
 0 6
 ```
+![GRAPH](https://user-images.githubusercontent.com/91688611/141691722-06aa8488-51bc-4bae-b399-85ff7108ced9.PNG)
