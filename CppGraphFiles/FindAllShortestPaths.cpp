@@ -254,8 +254,6 @@ int main(int argc, char** argv)
                 }
             }
 
-            //out << "Final";
-
             out.close();
         }
     }
