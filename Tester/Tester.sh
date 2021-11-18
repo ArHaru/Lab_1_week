@@ -53,7 +53,7 @@ cd ./CppGraphFiles
 
 count=1
 
-for i in {1..30}
+for i in {1..100}
 do
 	removeAnswerFasp
 	removeAnswerNospc
@@ -81,7 +81,7 @@ done
 
 count=1
 
-for i in {1..30}
+for i in {1..100}
 do
 	removeAnswerFasp
 	removeAnswerNospm
