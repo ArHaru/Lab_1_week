@@ -13,8 +13,6 @@ int main(int argc, char** argv)
 
 	srand(time(NULL));
 
-	//std::string path = "../TestingFiles/TwoVertices.txt";
-
 	std::string path = argv[1];
 
 	std::ofstream out;
@@ -35,10 +33,28 @@ int main(int argc, char** argv)
 		{
 			fromVertex = rand() % 10000;
 
-			toVertex = rand() % 800 + std::abs((fromVertex - 400));
-			while(toVertex == fromVertex)
+			int border1, border2;
+
+			border1 = fromVertex - 400;
+
+			border2 = fromVertex + 400;
+
+			if (border1 < 0)
 			{
-				toVertex = rand() % 800 + std::abs((fromVertex - 400));
+				border1 = 0;
+			}
+			if (border2 > 9999)
+			{
+				border2 = 9999;
+			}
+
+			int range = border2 - border1 + 1;
+
+			toVertex = rand() % range + border1;
+
+			while (toVertex == fromVertex)
+			{
+				toVertex = rand() % range + border1;
 			}
 		}
 		else if(graphType == "Circle")
