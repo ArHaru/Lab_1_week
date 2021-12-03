@@ -1,3 +1,6 @@
+#Graph:
+
+
 # This project processes a graph and prints all shortest paths from one vertex to another that are given as arguments.
 
 ## 1. How to build this project:
@@ -87,3 +90,13 @@ graphFiles
 ```
 
 ![GRAPH](https://user-images.githubusercontent.com/91688611/141691722-06aa8488-51bc-4bae-b399-85ff7108ced9.PNG)
+
+#Docker:
+
+
+About project:
+This project should help you with creating a docker image using wich you can create a conatiner in which a script is instantly launched that reverses the number 1234
+
+Step by step how to use this project:
+* After downloading this repository into your direcotry, you should run in your terminal `docker build "place here full path to Docker direcotry"`.
+* Now you created an image and now you can run `docker run "that images ID"` and scirpt will automatically run.
